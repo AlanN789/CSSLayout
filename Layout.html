@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Pone para que todo sea del tamaño de la caja y resetea bordes */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-family:Arial;
+    }
+    header{
+      background-color:#A31A5E;
+      font-size:30px;
+      color:white;
+      text-align:center;
+      margin: 0px;
+      padding: 0px;
+    }
+    aside{
+      float:left;
+      width:70%;
+      height: 250px;
+      background-color: #40042c;
+      padding:30px;
+      color:white;
+      margin:0;
+    }
+    article{
+      float:left;
+      width:30%;
+      height:250px;
+      background-color: #5a0471;
+      padding:30px;
+      color:white;
+      margin:0;
+    }
+    footer{
+      background-color: #000000;
+      text-align:center;
+      color: #ffffff;
+      height:50px;
+      padding:10px;
+    }
+    /* Sirve para resetear las cosas */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    ul {
+      overflow: hidden;
+      width:100%;
+      line-height:300%;
+      background-color:black;
+    }
+    li{
+      float: left;/* Hace que la lista sea horizontal */
+      display: block;/* Hace que no salgan los puntos de la lista */
+      color: #ffffff;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 20px;
+    }
+    /* Hace que tenga un efecto cuando se pasa el cursor sobre el texto */
+    li:hover{
+      background-color: #6d0762;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>AMLOVER</h1>
+</header>
+<section>
+    <ul>
+      <li>Hola</li>
+      <li>Como</li>
+      <li>Estan</li>
+    </ul>
+  <article>
+    <h1>Amogus</h1>
+  </article>
+  <aside>
+    <h1>La hormiga</h1>
+    <p>Alla en la fuente habia un chorrito se hacia grandote, se hacia chiquito</p>
+  </aside>
+</section>
+<footer>
+  <h1>Alan</h1>
+</footer>
+</body>
+</html>
